@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.hvd h2{
+    color: aqua;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-shadow: 0 0 8px rgba(0,0,0,0.9);
+    box-shadow: 7px 0 0 #555;
+    overflow: hidden;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    animation: typing 15s steps(21) infinite;
+}
+@keyframes typing{
+    0%, 90%, 100%{
+        width: 0;
+    }
+    30%, 60%{
+        width: 670px;
+    }
+}
+
+.heart{
+    width: 400px;
+    height: 400px;
+    background: transparent;
+    position: relative;
+}
+.heart h1{
+    width: 175px;
+    font-size: 2.5em;
+    color: #0f0;
+    text-align: center;
+    line-height: 90px;
+    text-shadow: 0 0 12px rgba(0,0,0,0.9);
+    top: 80px;
+    left: 110px;
+    position: absolute;
+}
+.part-1{
+    width: 50%;
+    height: 400px;
+    background: transparent;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transition: left 0.5s;
+}
+.part-1 i{
+    font-size: 399px;
+    color: #333;
+    top: 0;
+    left: 0;
+    position: absolute;
+    
+}
+.heart:hover .part-1{
+    left:-100px;
+}
+.part-2{
+    width: 50%;
+    height: 400px;
+    background: transparent;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    position: absolute;
+    transition: right 0.5s;
+    z-index: ;
+}
+.part-2 i{
+    font-size: 399px;
+    color: #555;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+.heart:hover .part-2{
+    right:-100px;
+}
+
+.heart h1:focus{
+    color: #ff0;
+}
